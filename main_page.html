@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords"
+        content="html,css,js,javascript,rajat,rajat sharma,mern stack developer, rajat github,vector india github">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR PAGE</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/games');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+            font-family: 'Games', sans-serif;
+        }
+
+        #myVideo {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+
+            position: fixed;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        #logo {
+            position: fixed;
+            z-index: 200;
+            top: 1px;
+            right: 5px;
+
+
+        }
+
+        img {
+            height: 70px;
+            width: 120px;
+
+
+        }
+
+        .con {
+            width: 70%;
+            height: 40vh;
+            margin: auto;
+            position: relative;
+            box-shadow: 0px 0px 5px 3px #1B03A3;
+            border-radius: 5px;
+
+        }
+
+        .con img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            opacity: 1;
+            animation: fade 4s linear infinite;
+        }
+
+        @keyframes fade {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .text {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #1B03A3;
+            text-shadow: 1px 1px 2px whitesmoke;
+            animation: fade 4s linear infinite;
+        }
+
+        .arrow {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            top: 47%;
+            font-size: 20px;
+            color: azure;
+            padding: 0px 5px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            color: white;
+
+        }
+
+        .right {
+            color: white;
+        }
+
+        .left:hover {
+            top: 40%;
+            font-size: 40px;
+            text-shadow: 1px 1px 4px rgb(246, 33, 25);
+        }
+
+        .right:hover {
+            top: 40%;
+            font-size: 40px;
+            text-shadow: 1px 1px 4px rgb(246, 33, 25);
+        }
+
+        .foot {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot div {
+            padding-right: 8px;
+        }
+
+        .fa-circle {
+            color: r#1B03A3;
+            border: 1px solid rgb(246, 33, 25);
+            border-radius: 50%;
+        }
+
+        .fa-solid {
+            color: #1B03A3;
+
+        }
+
+        .mnav {
+            position: fixed;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            height: 12vh;
+            border: 1px solid #1B03A3;
+            box-shadow: 0px 0px 5px 3px rgb(246, 33, 25);
+            ;
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            align-items: center;
+            font-size: 35px;
+            margin-top: 2px;
+            z-index: 101;
+        }
+
+        .nav {
+            position: absolute;
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(11, 23, 32);
+            z-index: 100;
+            margin-top: 13vh;
+            color: #1B03A3;
+            font-weight: bolder;
+            box-shadow: 0px 0px 5px 3px #1B03A3;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            animation: fcolor 5s infinite;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            animation: fcolor 5s infinite;
+        }
+
+        @keyframes fcolor {
+            0% {
+                color: #69b7eb;
+            }
+
+            45% {
+                color: #b3dbd3;
+            }
+
+            90% {
+                color: #f4d6db;
+            }
+        }
+
+        .con-18 {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .cont {
+            width: 350px;
+            height: 250px;
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .cont:hover {
+            box-shadow: 0px 0px 3px 2px rgb(246, 33, 25);
+        }
+
+        .cimg img {
+            width: 350px;
+            height: 180px;
+            margin: auto;
+        }
+
+        .cimg img:hover {
+            width: 365px;
+            height: 190px;
+        }
+
+        h4 {
+            color: whitesmoke;
+        }
+
+        p {
+            color: whitesmoke;
+            font-size: 12px;
+        }
+
+        p i {
+            color: whitesmoke;
+        }
+
+        footer ol {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            position: relative;
+            top: 1px;
+            z-index: 2000;
+            font-size: 15px;
+            background: black;
+        }
+
+        .ftr li a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        i = 0
+        let a = ["s1.jpg", "s2.jpg", "s3.jpg", "s4.jpg", "s5.jpg", "s6.jpg", "s7.jpg", "s8.jpg", "s9.jpg"]
+        let data = [{ heading: "THE GAMER", cont: "" },
+        { heading: "NFS HEAT", cont: "" },
+        { heading: "FORTNITE", cont: "" },
+        { heading: "LEAGUE OF LEGENDS", cont: "" },
+        { heading: "COUNTER STRIKE", cont: "" },
+        { heading: "PREDATOR THE SHOOTER", cont: "" },
+        { heading: "CALL OF DUTY", cont: "" },
+        { heading: "GOD OF WARS", cont: "" },
+        { heading: "NIGHT KILLER", cont: "" }]
+        function fun() {
+            let iref = document.getElementById("simg")
+            let hrf = document.getElementById("hd")
+            let brf = document.getElementById("bc")
+            let dref = document.getElementsByClassName("fa-circle")
+            let cl = dref[i].classList
+            cl.remove("fa-solid")
+            cl.add('fa-regular')
+            dref[i].classList = cl
+            i++
+            if (i >= a.length) {
+                i = 0
+            }
+            iref.src = a[i]
+            hrf.innerHTML = data[i].heading
+            brf.innerHTML = data[i].cont
+            let cl1 = dref[i].classList
+            cl1.remove("fa-regular")
+            cl1.add('fa-solid')
+            dref[i].classList = cl1
+        }
+        setInterval(fun, 4000)
+        function fun1() {
+            let iref = document.getElementById("simg")
+            let hrf = document.getElementById("hd")
+            let brf = document.getElementById("bc")
+            let dref = document.getElementsByClassName("fa-circle")
+            let cl = dref[i].classList
+            cl.remove("fa-solid")
+            cl.add('fa-regular')
+            dref[i].classList = cl
+            i--
+            if (i < 0) {
+                i = a.length - 1
+            }
+            iref.src = a[i]
+            hrf.innerHTML = data[i].heading
+            brf.innerHTML = data[i].cont
+            let cl1 = dref[i].classList
+            cl1.remove("fa-regular")
+            cl1.add('fa-solid')
+            dref[i].classList = cl1
+        }
+        function fun2() {
+            let iref = document.getElementById("simg")
+            let hrf = document.getElementById("hd")
+            let dref = document.getElementsByClassName("fa-circle")
+            let brf = document.getElementById("bc")
+            let cl = dref[i].classList
+            cl.remove("fa-solid")
+            cl.add('fa-regular')
+            dref[i].classList = cl
+            i++
+            if (i >= a.length) {
+                i = 0
+            }
+            iref.src = a[i]
+            hrf.innerHTML = data[i].heading
+            brf.innerHTML = data[i].cont
+            let cl1 = dref[i].classList
+            cl1.remove("fa-regular")
+            cl1.add('fa-solid')
+            dref[i].classList = cl1
+        }
+        function fun3(x) {
+            let iref = document.getElementById("simg")
+            let hrf = document.getElementById("hd")
+            let dref = document.getElementsByClassName("fa-circle")
+            let brf = document.getElementById("bc")
+            let cl = dref[i].classList
+            cl.remove("fa-solid")
+            cl.add('fa-regular')
+            dref[i].classList = cl
+            i = x
+            iref.src = a[i]
+            hrf.innerHTML = data[i].heading
+            brf.innerHTML = data[i].cont
+            let cl1 = dref[i].classList
+            cl1.remove("fa-regular")
+            cl1.add('fa-solid')
+            dref[i].classList = cl1
+        }
+        function fun101() {
+            hlr = document.getElementsByTagName("h1")[0]
+            hlr.innerHTML = hlr.innerHTML + " " + localStorage.getItem("username") + " TO PLAY GAMES"
+        }
+        setTimeout(fun101, 500)
+    </script>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 2611250.mp4" type="video/mp4">
+    </video>
+    <div id="logo"><img src="FINAL LOGO.jpg"></div>
+    <div class="mnav">
+        <div style="padding-left: 20px;">HOME</div>
+        <div style="padding-right: 400px;">
+            <h1>WELCOME</h1>
+        </div>
+    </div>
+    <div class="nav">
+        <div>
+            <h2>ADVENTURE</h2>
+        </div>
+        <div>
+            <h2>ARCADE</h2>
+        </div>
+        <div>
+            <h2>ACTION</h2>
+        </div>
+        <div>
+            <h2>STRATEGY</h2>
+        </div>
+        <div>
+            <h2>PUZZLE</h2>
+        </div>
+        <div>
+            <h2>SPORTS</h2>
+        </div>
+    </div>
+    <div style="height: 150px;"></div>
+    <div class="con"><img src="s1.jpg" id="simg" />
+        <div class="text">
+            <h1 id="hd">THE GAMER</h1>
+            <div id="bc"></div>
+        </div>
+        <div class="arrow">
+            <div class="left" onclick="fun1()"><i class="fa-solid fa-less-than" style="color: whitesmoke;"></i></i>
+            </div>
+            <div class="right" onclick="fun2()"><i class="fa-solid fa-greater-than" style="color: whitesmoke;"></i>
+            </div>
+        </div>
+        <div class="foot">
+            <div onclick="fun3(0)"><i class="fa-solid fa-circle"></i></div>
+            <div onclick="fun3(1)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(2)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(3)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(4)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(5)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(6)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(7)"><i class="fa-regular fa-circle"></i></div>
+            <div onclick="fun3(8)"><i class="fa-regular fa-circle"></i></div>
+        </div>
+    </div>
+    <div class="con-18">
+        <div class="cont"><a href="index.html">
+                <div class="cimg"><img src="./1p.jpg"></div>
+                <div>
+                    <h4>THE ROOM OF THREE</h4>
+                </div>
+                <div>
+                    <p>ADVENTURE</p>
+                </div>
+                <div>
+                    <p>4.9 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+                </div>
+        </div></a>
+        <div class="cont">
+            <div class="cimg"><img src="./2p.webp"></div>
+            <div>
+                <h4>POKEMON GO</h4>
+            </div>
+            <div>
+                <p>ADVENTURE</p>
+            </div>
+            <div>
+                <p>4.7 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./3p.jpg"></div>
+            <div>
+                <h4>BADLAND</h4>
+            </div>
+            <div>
+                <p>ADVENTURE</p>
+            </div>
+            <div>
+                <p>4.6 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./4p.webp"></div>
+            <div>
+                <h4>MINECRAFT</h4>
+            </div>
+            <div>
+                <p>ARCADE</p>
+            </div>
+            <div>
+                <p>4.2 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./5p.webp"></div>
+            <div>
+                <h4>NATIONS OF DARKNESS</h4>
+            </div>
+            <div>
+                <p>ARCADE</p>
+            </div>
+            <div>
+                <p>4.0 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./6p.webp"></div>
+            <div>
+                <h4>PAC-MAN</h4>
+            </div>
+            <div>
+                <p>ARCADE</p>
+            </div>
+            <div>
+                <p>3.7 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./7p.webp"></div>
+            <div>
+                <h4>PUBG</h4>
+            </div>
+            <div>
+                <p>ACTION</p>
+            </div>
+            <div>
+                <p>4.6 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./8p.jpg"></div>
+            <div>
+                <h4>DOOM</h4>
+            </div>
+            <div>
+                <p>ACTION</p>
+            </div>
+            <div>
+                <p>3.3 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./9p.jpg"></div>
+            <div>
+                <h4>INJUSTICE 2</h4>
+            </div>
+            <div>
+                <p>ACTION</p>
+            </div>
+            <div>
+                <p>4.2 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./10p.webp"></div>
+            <div>
+                <h4>CALL OF DRAGONS</h4>
+            </div>
+            <div>
+                <p>STRATEGY</p>
+            </div>
+            <div>
+                <p>3.9 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./11p.jpg"></div>
+            <div>
+                <h4>CLASH OF CLANS</h4>
+            </div>
+            <div>
+                <p>STRATEGY</p>
+            </div>
+            <div>
+                <p>4.4 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./12p.jpg"></div>
+            <div>
+                <h4>LEAGUE OF ROME</h4>
+            </div>
+            <div>
+                <p>STRATEGY</p>
+            </div>
+            <div>
+                <p>3.6 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./13p.webp"></div>
+            <div>
+                <h4>HUMAN FALL FLAT</h4>
+            </div>
+            <div>
+                <p>PUZZLE</p>
+            </div>
+            <div>
+                <p>4.3 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./14p.jpeg"></div>
+            <div>
+                <h4>ANGRY BIRDS</h4>
+            </div>
+            <div>
+                <p>PUZZLE</p>
+            </div>
+            <div>
+                <p>4.6 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./15p.png"></div>
+            <div>
+                <h4>CANDY CRUSH SAGA</h4>
+            </div>
+            <div>
+                <p>PUZZLE</p>
+            </div>
+            <div>
+                <p>4.5 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./16p.jpg"></div>
+            <div>
+                <h4>FIFA SOCCER</h4>
+            </div>
+            <div>
+                <p>SPORTS</p>
+            </div>
+            <div>
+                <p>4.2<i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./17p.webp"></div>
+            <div>
+                <h4>BASEBALL</h4>
+            </div>
+            <div>
+                <p>SPORTS</p>
+            </div>
+            <div>
+                <p>3.7 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cimg"><img src="./18p.jpg"></div>
+            <div>
+                <h4>8 BALL POOL</h4>
+            </div>
+            <div>
+                <p>SPORTS</p>
+            </div>
+            <div>
+                <p>4.4 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ol class="ftr">
+            <li><a href="https://www.linkedin.com/in/rajat-sharma-796152170/">LINKEDIN-ID</a></li>
+            <li><a href="https://github.com/11sharmarajat">GITHUB-ID</a></li>
+            <li><a href="https://www.hackerrank.com/11SHARMARAJAT">HACKER RANK-ID</a></li>
+            <li><a href="./RAJAT SHARMA RESUME UPDATED.pdf">RESUME</a></li>
+        </ol>
+    </footer>
+</body>
+
+</html>

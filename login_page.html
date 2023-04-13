@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-GAMERS LOGIN</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/games');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+            font-family: 'Games', sans-serif;
+        }
+
+        #myVideo {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 0;
+        }
+
+        #logo {
+            position: fixed;
+            z-index: 10;
+            top: 1px;
+            right: 5px;
+        }
+
+        img {
+            height: 70px;
+            width: 120px;
+        }
+
+        .con {
+            height: 70vh;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: auto;
+            border: 3px solid whitesmoke;
+            margin-bottom: 80px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+
+        footer ol {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 1px;
+            left: 1px;
+            z-index: 20;
+            font-size: 15px;
+            background: black;
+        }
+
+        .ftr li a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        label {
+            color: whitesmoke;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        #tt {
+            width: 150px;
+            text-decoration: none;
+            background: transparent;
+            font-size: 15px;
+            color: whitesmoke;
+            border: 1px solid rgb(246, 33, 25);
+            text-align: center;
+            text-transform: uppercase;
+            transition: width 4s;
+            padding: 3px 7px;
+        }
+
+        #tt:focus {
+            width: 300px;
+            background-color: whitesmoke;
+            color: black;
+            margin-left: 0px;
+        }
+
+        input[type=submit] {
+            size: 40px;
+            width: 200px;
+            height: 40px;
+            font-size: 30px;
+            background: transparent;
+            color: whitesmoke;
+            border: 2px solid whitesmoke;
+            justify-content: center;
+            font-weight: bolder;
+            border-radius: 7px;
+            margin-left: 80px;
+        }
+
+        input[type=submit]:hover {
+            box-shadow: 0px 0px 3px 3px rgb(246, 33, 25);
+        }
+    </style>
+    <script>
+        function fun(event) {
+            let itr = document.getElementsByTagName("input")
+            localStorage.setItem("username", itr[0].value)
+            console.log(itr[0].value)
+        }
+    </script>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 2611250.mp4" type="video/mp4">
+    </video>
+    <div id="logo"><img src="FINAL LOGO.jpg"></div>
+    <div class="content">
+        <form action="./intro_video_page.html" onsubmit="fun(event)">
+            <div class="con">
+                <div><label>NAME:</label>
+                    <input type="text" placeholder="enter name (compulsory)" id="tt" style="margin-left: 55px;"
+                        name="username" required />
+                </div>
+                <div><label>Email-ID:</label>
+                    <input type="email" placeholder="enter EMAIL-ID" id="tt" style="margin-left: 37px;" />
+                </div>
+                <div><label>GAMING-ID:</label>
+                    <input type="text" placeholder="enter GAMING-ID" id="tt" style="margin-left: 6px;" />
+                </div>
+                <div><label>PASSWORD:</label>
+                    <input type="PASSWORD" placeholder="enter PASSWORD" id="tt" style="margin-left: 0px;" />
+                </div>
+                <div><label>GENDER:</label>
+                    <input type="radio" value="MAlE" name="MALE" style="margin-left: 30px;" />MALE
+                    <input type="radio" value="FEMAlE" name="MALE" style="margin-left: 20px;" />FEMALE
+                </div>
+                <div><input type="submit" value="LOGIN"></div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <ol class="ftr">
+            <li><a href="https://www.linkedin.com/in/rajat-sharma-796152170/">LINKEDIN-ID</a></li>
+            <li><a href="https://github.com/11sharmarajat">GITHUB-ID</a></li>
+            <li><a href="https://www.hackerrank.com/11SHARMARAJAT">HACKER RANK-ID</a></li>
+            <li><a href="./RAJAT SHARMA RESUME UPDATED.pdf">RESUME</a></li>
+        </ol>
+    </footer>
+</body>
+
+</html>

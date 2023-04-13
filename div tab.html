@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords"
+        content="html,css,js,javascript,rajat,rajat sharma,mern stack developer, rajat github,vector india github">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR PAGE</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/games');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+            font-family: 'Games', sans-serif;
+            color: whitesmoke;
+        }
+
+        #myVideo {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        #logo {
+            position: fixed;
+            z-index: 200;
+            top: 1px;
+            right: 5px;
+        }
+
+        img {
+            height: 70px;
+            width: 120px;
+        }
+
+        .con {
+            width: 70%;
+            height: 40vh;
+            margin: auto;
+            position: relative;
+            box-shadow: 0px 0px 5px 3px #1B03A3;
+            border-radius: 5px;
+        }
+
+        .con img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            opacity: 1;
+            animation: fade 4s linear infinite;
+        }
+
+        @keyframes fade {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .text {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #1B03A3;
+            text-shadow: 1px 1px 2px whitesmoke;
+            animation: fade 4s linear infinite;
+        }
+
+        .arrow {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            top: 47%;
+            font-size: 20px;
+            color: azure;
+            padding: 0px 5px;
+            box-sizing: border-box;
+        }
+
+        .foot {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot div {
+            padding-right: 8px;
+        }
+
+        .fa-circle {
+            color: r#1B03A3;
+            border: 1px solid rgb(246, 33, 25);
+            border-radius: 50%;
+        }
+
+        .fa-solid {
+            color: #1B03A3;
+        }
+
+        .mnav {
+            position: fixed;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            height: 12vh;
+            border: 1px solid #1B03A3;
+            box-shadow: 0px 0px 5px 3px rgb(246, 33, 25);
+            ;
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            align-items: center;
+            font-size: 35px;
+            margin-top: 2px;
+            z-index: 101;
+        }
+
+        .nav {
+            position: absolute;
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(11, 23, 32);
+            z-index: 100;
+            margin-top: 13vh;
+            color: #1B03A3;
+            font-weight: bolder;
+            box-shadow: 0px 0px 5px 3px #1B03A3;
+        }
+
+        .contdes {
+            width: 90%;
+            height: 60vh;
+            border: 1px solid gold;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+            border: 1px solid pink;
+            margin-left: 50px;
+        }
+
+        .right {
+            width: 38%;
+            height: 100%;
+            border: 1px solid burlywood;
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: whitesmoke;
+        }
+
+        #boxvideo {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            animation: fcolor 5s infinite;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            animation: fcolor 5s infinite;
+        }
+
+        @keyframes fcolor {
+            0% {
+                color: #69b7eb;
+            }
+
+            45% {
+                color: #b3dbd3;
+            }
+
+            90% {
+                color: #f4d6db;
+            }
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        footer ol {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            position: relative;
+            top: 1px;
+            z-index: 2000;
+            font-size: 15px;
+            background: black;
+        }
+
+        .ftr li a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Pexels Videos 2611250.mp4" type="video/mp4">
+    </video>
+    <div id="logo"><img src="FINAL LOGO.jpg"></div>
+    <div class="mnav">
+        <div style="padding-left: 20px;">HOME</div>
+        <div style="padding-right: 480px;">
+            <h1>THE ROOM OF THREE</h1>
+        </div>
+    </div>
+    <div class="nav">
+        <div>
+            <h2>ADVENTURE</h2>
+        </div>
+        <div>
+            <h2>ARCADE</h2>
+        </div>
+        <div>
+            <h2>ACTION</h2>
+        </div>
+        <div>
+            <h2>STRATEGY</h2>
+        </div>
+        <div>
+            <h2>PUZZLE</h2>
+        </div>
+        <div>
+            <h2>SPORTS</h2>
+        </div>
+    </div>
+    <div style="height: 150px;"></div>
+    <div class="contdes">
+        <div class="left">
+            <video autoplay muted loop id="boxvideo">
+                <source src="./the room of three.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="right">
+            <h3>THE ROOM OF THREE</h3>
+            <h4>R-GAMERS</h4>
+            <h4>4.9 <i class="fa-solid fa-star" style="color: whitesmoke;"></i></h4>
+            <h4>500K DOWNLOADS</h4>
+            <h5>“Probably the Best Mobile Game of 2015” - Vice
+
+                “With its rich atmosphere and clever puzzles, The Room Three is engrossing and hard to put down.” - Game
+                Informer
+
+                “A triumph. We fully recommend immersing yourself in this atmospheric mystery” - Stuff
+
+                “Much bigger and longer than the previous titles, more of a full-blown adventure game” - Touch Arcade
+
+                “A brilliant, uniquely tactile experience packed with incredible puzzles. Just go and buy it.” - Pocket
+                Gamer
+            </h5>
+        </div>
+        <div>
+            <hr />
+        </div>
+    </div>
+</body>
+
+</html>
